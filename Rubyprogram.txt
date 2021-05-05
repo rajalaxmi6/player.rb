@@ -1,0 +1,79 @@
+class Player
+irb(main):244:1*   puts "Dhoni"
+irb(main):245:1*   puts "Sachin"
+irb(main):246:0> end
+output:
+
+Dhoni
+Sachin
+
+ def player_name
+irb(main):248:1*   @player1 = Player.new("Dhoni")
+irb(main):249:1*   @player2 = Player.new("Sachin")
+irb(main):250:0> end
+output:
+=> :player_name
+
+
+Create a method to add the runs scored by the player for every ball:
+
+ def add
+irb(main):261:1*   return sum
+irb(main):262:1*   @player1.add_run(4)
+irb(main):263:1*   @player1.add_run(6)
+irb(main):264:1*   @player1.add_run(1)
+irb(main):265:0> end
+output:
+=> :add
+
+ num= [4+6+1]
+output:
+=> [11]
+
+Create a method total_score to return the total runs by the player, 
+
+def total_score
+irb(main):278:1*   total_score
+irb(main):279:1*   puts total_score 4,6
+irb(main):280:0> end
+output:
+
+=> :total_score
+
+Create a method total_score to return the total runs by the player, 
+ As per the above example @player1 had scored => 4,6 and 1. So the method @player1.total_score should return the sum of all the runs (4+6+1), which is 11.
+
+irb(main):339:1* def total_score
+irb(main):340:2*   [4+6+1].each  do |num|
+irb(main):341:2*   puts num
+irb(main):342:1*   end
+irb(main):343:0> end
+=> :total_score
+
+num= [4+6+1]
+output:
+=> [11]
+
+The runs with values 4 and 6 are considered as boundaries. Create a method 'boundaries' which should return the number of 4s and 6s scored by a player.
+ Example: @player1.boundaries should return 2
+
+ def boundaries
+irb(main):362:1*   @player1.boundaries(4)
+irb(main):363:1*   @player2.boundaries(6)
+irb(main):364:1*   puts @player1.boundaries(4)+@player2.boundaries(6)
+irb(main):365:0> end
+
+output:
+
+=> :boundaries
+
+
+Create a method 'details', @player1.details should return all the values like name, total runs and boundaries. 
+ Ex: @player1.details should return "Name: Dhoni Total Runs: 11 Boundaries: 2"
+
+ def details
+irb(main):373:1*   @player1.details
+irb(main):374:0> end
+output
+
+=> :details
