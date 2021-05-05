@@ -1,0 +1,10 @@
+
+Create a class called "Player" which takes the player name as the argument.
+
+class Player
+attr_accessor:name
+def initialize name
+  @player1 = Player.new("Dhoni")
+ end
+ end
+ 
