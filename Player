@@ -2,9 +2,36 @@
 Create a class called "Player" which takes the player name as the argument.
 
 class Player
-attr_accessor:name
-def initialize name
+attr_accessor:name ,:total_score,:values, :details
+def initialize name, total_score,values,details
+
   @player1 = Player.new("Dhoni")
- end
- end
+  @player1 = Player.new("Sachin")
+  def add_runs
+    @player1.add_runs(4)
+    @player1.add_runs(6)
+    @player1.add_runs(1)
+  puts sum @player1 =>(4+6+1)
+  
+  def boundaries
+  num = 4,6
+  return 2
+  @player1.boundaries
+  
+  def details
+   @player1.details= Dhoni,Sachin
+   end
+   end
+   
+   
+  
+  
+  end
+  end
+  4+6+1
+  output:
+  11
+  
+  
+  
  
