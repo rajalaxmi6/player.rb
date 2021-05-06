@@ -8,13 +8,13 @@ class Player
     @player2.Player.new("Sachin")
   end
    
-  def add_score(run)
+  def add_run(run)
       
         @player1.add_run(4)
         @player1.add_run(6)
         @player1.add_run(1)
         @player2.add_run(6)
-     	@player2.add_run(1)
+     	  @player2.add_run(1)
     end
     
     def total_score
